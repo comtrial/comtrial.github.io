@@ -11,6 +11,12 @@ import { IGatsbyImageData } from 'gatsby-plugin-image'
 import queryString, { ParsedQuery } from 'query-string'
 import Template from 'components/Common/Template'
 
+const Main = styled.div`
+  grid-column-start: 4;
+  grid-column-end: 8;
+  margin-left: 40px;
+  width: 100%;
+`
 
 type IndexPageProps = {
   location: {
@@ -89,11 +95,14 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
       image={publicURL}
     >
       <Introduction profileImage={gatsbyImageData} />
-      <CategoryList
-        selectedCategory={selectedCategory}
-        categoryList={categoryList}
-      />
-      <PostList selectedCategory={selectedCategory} posts={edges} />
+      <Main>
+        <CategoryList
+          selectedCategory={selectedCategory}
+          categoryList={categoryList}
+        />
+        <PostList selectedCategory={selectedCategory} posts={edges} />
+      </Main>
+
     </Template>
   )
 }

@@ -13,9 +13,19 @@ type TemplateProps = {
 }
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
+//   display: flex;
+//   flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
   height: 100vh;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 const Template: FunctionComponent<TemplateProps> = function ({

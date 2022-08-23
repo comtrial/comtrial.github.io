@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react'
 import styled from '@emotion/styled'
 
 interface PostContentProps {
-    html: string
+  html: string
 }
 
 const MarkdownRenderer = styled.div`
@@ -10,13 +10,13 @@ const MarkdownRenderer = styled.div`
   display: flex;
   flex-direction: column;
   width: 768px;
-  margin: 0 auto;
-  padding: 100px 0;
+  margin: 45px 45px;
+  padding: 15px 0;
   word-break: break-all;
 
   // Markdown Style
   line-height: 1.8;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
 
   // Apply Padding Attribute to All Elements
@@ -130,7 +130,7 @@ const MarkdownRenderer = styled.div`
 `
 
 const PostContent: FunctionComponent<PostContentProps> = function ({ html }) {
-    return <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />
+  return <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />
 }
 
 export default PostContent

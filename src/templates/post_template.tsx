@@ -5,6 +5,14 @@ import Template from 'components/Common/Template'
 import PostHead from 'components/Post/PostHead'
 import PostContent from 'components/Post/PostContent'
 import CommentWidget from 'components/Post/CommentWidget'
+import styled from '@emotion/styled'
+import Introduction from 'components/Main/Introduction'
+
+const Post = styled.div`
+  grid-column-start: 4;
+  grid-column-end: 10;
+`
+
 
 type PostTemplateProps = {
   data: {
@@ -41,14 +49,17 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
 
   return (
     <Template title={title} description={summary} url={href} image={publicURL}>
-      <PostHead
-        title={title}
-        date={date}
-        categories={categories}
-        thumbnail={gatsbyImageData}
-      />
-      <PostContent html={html} />
-      <CommentWidget />
+      <Introduction profileImage={gatsbyImageData} />
+      <Post>
+        <PostHead
+          title={title}
+          date={date}
+          categories={categories}
+          thumbnail={gatsbyImageData}
+        />
+        <PostContent html={html} />
+        <CommentWidget />
+      </Post>
     </Template>
   )
 }

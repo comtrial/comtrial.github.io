@@ -33,9 +33,9 @@ export type PostType = {
 
 
 const PostListWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
   width: 768px;
   margin: 0 auto;
   padding: 50px 0 100px;
@@ -43,7 +43,7 @@ const PostListWrapper = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     width: 100%;
-    padding: 50px 20px;
+    // padding: 50px 20px;
   }
 `
 
