@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `주니어 개발자의 개발 블로그`,
+    description: `주니어 개발자로서의 저를 표현한 블로그입니다.`,
+    author: `Susan`,
+    siteUrl: 'https://comtrial.github.io/',
   },
   plugins: [
     {
@@ -81,7 +82,15 @@ module.exports = {
               name: `images`,
               path: `${__dirname}/static`,
             }
-          }
+          },
+          {
+            resolve: 'gatsby-plugin-canonical-urls',
+            options: {
+              siteUrl: 'https://comtrial.github.io/',
+              stripQueryString: true,
+            },
+          },
+          'gatsby-plugin-sitemap',
 
         ],
       },
