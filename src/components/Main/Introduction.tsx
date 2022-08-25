@@ -32,24 +32,6 @@ const Wrapper = styled.div`
   }
 `
 
-const Mail = styled.div`
-  font-size: 16px;
-  font-weight: 400;
-
-  @media (max-width: 768px) {
-    font-size: 13px;
-  }
-`
-
-const Link = styled.div`
-  font-size: 16px;
-  font-weight: 400;
-
-  @media (max-width: 768px) {
-    font-size: 13px;
-  }
-`
-
 
 const SubTitle = styled.div`
   font-size: 16px;
@@ -65,6 +47,15 @@ const Title = styled.div`
   margin-bottom: 15px;
   @media (max-width: 768px) {
     font-size: 16px;
+  }
+`
+
+const Info = styled.div`
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  @media (max-width: 768px) {
+    font-size: 12px;
   }
 `
 
@@ -84,10 +75,12 @@ const Introduction: FunctionComponent<IntroductionProps> = function ({
         </div>
 
         <br></br>
-        <Mail>comtrial97@gmail.com</Mail>
+        <Info>
+          <p>comtrial97@gmail.com</p>
+          <br></br>
+          <a href="https://github.com/comtrial" target="_blank" rel="noreferrer"><u>Github →</u></a>
+        </Info>
 
-        <br></br>
-        <Link>Github -></Link>
       </Wrapper>
     </Background>
   )
