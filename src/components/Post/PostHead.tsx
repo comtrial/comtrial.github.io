@@ -18,9 +18,14 @@ const PostHeadWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 300px;
+  margin-top: 80px;
+  box-sizing: border-box;
+
+  overflow: hidden;
 
   @media (max-width: 768px) {
-    height: 300px;
+    height: 20vh;
+    margin-top: 12px;
   }
 `
 
@@ -29,12 +34,13 @@ const BackgroundImage = styled((props: GatsbyImgProps) => (
 ))`
   z-index: -1;
   width: 100%;
-  height: 300px;
+  height:  22vh;
+  
   object-fit: cover;
-  filter: brightness(0.25);
+  // filter: brightness(0.75);
 
   @media (max-width: 768px) {
-    height: 300px;
+    height: 100%;
   }
 `
 

@@ -9,24 +9,26 @@ type IntroductionProps = {
 }
 
 const Background = styled.div`
-  grid-column-end: span 2;
-  margin: 80px 0 80px 60px;
+  grid-column-end: span 4;
+  padding: 80px 0 80px 80px;
   width: 100%;
-
+  display: block;
   @media (max-width: 768px) {
-    margin: 15px 15px 15px 15px;
+    // width: 100%
+    padding: 14px 14px 14px 14px;
 }
 `
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
   // align-items: center;
-  margin: 0 40px;
+  // margin: 0 40px;
 
   @media (max-width: 768px) {
     width: 100%;
-    // padding: 0 20px;
+
   }
 `
 
@@ -78,7 +80,7 @@ const Introduction: FunctionComponent<IntroductionProps> = function ({
 
         <div>
           <SubTitle>Nice to Meet You,</SubTitle>
-          <Title>I'm Junior Frontend Developer Hyun.</Title>
+          <Title>I'm Junior Frontend Developer Susan.</Title>
         </div>
 
         <br></br>

@@ -10,13 +10,14 @@ export type PostHeadInfoProps = {
 }
 
 const PostHeadInfoWrapper = styled.div`
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 100%;
-  margin: 80px 45px;
   padding: 60px 0;
   color: #ffffff;
-
+  padding: 0 20px;
   @media (max-width: 768px) {
     width: 100%;
     padding: 40px 20px;
@@ -46,7 +47,7 @@ const Title = styled.div`
   display: -webkit-box;
   overflow: hidden;
   overflow-wrap: break-word;
-  margin-top: auto;
+  // margin-top: auto;
   text-overflow: ellipsis;
   white-space: normal;
   -webkit-line-clamp: 2;
@@ -84,9 +85,9 @@ const PostHeadInfo: FunctionComponent<PostHeadInfoProps> = function ({
 
   return (
     <PostHeadInfoWrapper>
-      <PrevPageIcon onClick={goBackPage}>
+      {/* <PrevPageIcon onClick={goBackPage}>
         <FontAwesomeIcon icon={faArrowLeft} />
-      </PrevPageIcon>
+      </PrevPageIcon> */}
       <Title>{title}</Title>
       <PostData>
         <div>{categories.join(' / ')}</div>

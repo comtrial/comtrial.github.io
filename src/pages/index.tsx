@@ -12,10 +12,14 @@ import queryString, { ParsedQuery } from 'query-string'
 import Template from 'components/Common/Template'
 
 const Main = styled.div`
-  grid-column-start: 4;
-  grid-column-end: 8;
-  margin-left: 40px;
-  width: 100%;
+  grid-column-start: 6;
+  grid-column-end: 14;
+  padding: 0 45px;
+  max-width: 100%;
+
+  @media (max-width: 768px) {
+    padding: 0 8px;
+  }
 `
 
 type IndexPageProps = {

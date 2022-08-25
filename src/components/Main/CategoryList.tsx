@@ -24,7 +24,7 @@ export type CategoryListProps = {
 const CategoryListWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 768px;
+//   width: 768px;
   padding-left: 15px;
   margin: 80px auto 0;
 
