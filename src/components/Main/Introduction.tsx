@@ -9,7 +9,7 @@ type IntroductionProps = {
 }
 
 const Background = styled.div`
-  grid-column-end: span 4;
+  grid-column-end: span 6;
   padding: 80px 0 80px 80px;
   width: 100%;
   display: block;

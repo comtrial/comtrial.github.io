@@ -12,9 +12,9 @@ import queryString, { ParsedQuery } from 'query-string'
 import Template from 'components/Common/Template'
 
 const Main = styled.div`
-  grid-column-start: 6;
-  grid-column-end: 14;
-  padding: 0 45px;
+  grid-column-start: 8;
+  grid-column-end: 18;
+  padding: 0 90px;
   max-width: 100%;
 
   @media (max-width: 768px) {

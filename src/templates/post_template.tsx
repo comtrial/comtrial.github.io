@@ -9,8 +9,8 @@ import styled from '@emotion/styled'
 import Introduction from 'components/Main/Introduction'
 
 const Post = styled.div`
-  grid-column-start: 6;
-  grid-column-end: 14;
+  grid-column-start: 9;
+  grid-column-end: 17;
   // padding: 0 80px;
   width: 100%;
   

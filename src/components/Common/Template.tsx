@@ -16,7 +16,7 @@ const Container = styled.div`
 //   display: flex;
 //   flex-direction: column;
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
+  grid-template-columns: repeat(24, 1fr);
   width: 100vw;
   height: 100vh;
 

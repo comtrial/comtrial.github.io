@@ -10,8 +10,18 @@ const MarkdownRenderer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0 80px;
   word-break: break-all;
+  overflow: hidden;
+  box-sizing: border-box;
+
+
+  .language-swift {
+    font-size: 12px;
+  }
+
+  .language-text {
+    font-size: 12px;
+  }
 
 
   // Markdown Style
@@ -60,7 +70,7 @@ const MarkdownRenderer = styled.div`
   blockquote {
     margin: 30px 0;
     padding: 5px 15px;
-    border-left: 2px solid #000000;
+    border-left: 1px solid #000000;
     font-weight: 800;
   }
 
