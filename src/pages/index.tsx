@@ -14,10 +14,19 @@ import Template from 'components/Common/Template'
 const Main = styled.div`
   grid-column-start: 8;
   grid-column-end: 18;
-  padding: 0 90px;
-  max-width: 100%;
+  padding: 0 80px;
+  max-width: 800px;
+  min-width: 650px;
+
+  @media (max-width: 1200px) {
+    // max-width: 800px;
+    // min-width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
 
   @media (max-width: 768px) {
+    min-width: 100%;
     padding: 0 8px;
   }
 `

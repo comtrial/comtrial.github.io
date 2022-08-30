@@ -11,9 +11,14 @@ const MarkdownRenderer = styled.div`
   flex-direction: column;
   width: 100%;
   word-break: break-all;
-  overflow: hidden;
+  // overflow: hidden;
   box-sizing: border-box;
 
+  img {
+    width: 100%;
+    padding: 0 10vw;
+    object-fit: cover;
+  }
 
   .language-swift {
     font-size: 12px;
@@ -131,6 +136,8 @@ const MarkdownRenderer = styled.div`
 
     img {
       width: 100%;
+      padding: 0 10vw;
+      object-fit: cover;
     }
 
     hr {

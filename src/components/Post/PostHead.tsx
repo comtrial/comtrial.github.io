@@ -23,6 +23,14 @@ const PostHeadWrapper = styled.div`
 
   overflow: hidden;
 
+  @media (max-width: 1200px) {
+    // grid-column-start: 8;
+    // grid-column-end: 18;
+    // max-width: 800px;
+    // min-width: 650px;
+    // margin: 0 auto;
+  }
+
   @media (max-width: 768px) {
     height: 20vh;
     margin-top: 12px;

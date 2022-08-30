@@ -11,11 +11,21 @@ import Introduction from 'components/Main/Introduction'
 const Post = styled.div`
   grid-column-start: 9;
   grid-column-end: 17;
-  // padding: 0 80px;
+
+  min-width: 650px;
+  max-width: 800px;
   width: 100%;
+
+  @media (max-width: 1200px) {
+    // max-width: 800px;
+    // min-width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
   
 
   @media (max-width: 768px) {
+    min-width: 100%;
     padding: 0;
   }
 `

@@ -13,12 +13,15 @@ type TemplateProps = {
 }
 
 const Container = styled.div`
-//   display: flex;
-//   flex-direction: column;
   display: grid;
   grid-template-columns: repeat(24, 1fr);
   width: 100vw;
   height: 100vh;
+
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   @media (max-width: 768px) {
     width: 100vw;
