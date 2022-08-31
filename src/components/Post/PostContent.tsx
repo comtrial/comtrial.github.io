@@ -16,15 +16,17 @@ const MarkdownRenderer = styled.div`
 
   img {
     width: 100%;
-    padding: 0 10vw;
+    padding: 0 5vw;
     object-fit: cover;
   }
 
   .language-swift {
+    border-radius: 8px;
     font-size: 12px;
   }
 
   .language-text {
+    border-radius: 8px;
     font-size: 12px;
   }
 
@@ -42,19 +44,22 @@ const MarkdownRenderer = styled.div`
   // Adjust Heading Element Style
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     font-weight: 600;
     margin-bottom: 30px;
   }
 
   * + h1,
   * + h2,
+  * + h3,
   * + h3 {
     margin-top: 80px;
   }
 
   hr + h1,
   hr + h2,
+  hr + h3,
   hr + h3 {
     margin-top: 0;
   }
@@ -64,11 +69,18 @@ const MarkdownRenderer = styled.div`
   }
 
   h2 {
+    font-weight: 800;
     font-size: 23px;
   }
 
   h3 {
+    font-weight: 800;
     font-size: 20px;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 18px;
   }
 
   // Adjust Quotation Element Style
@@ -127,11 +139,18 @@ const MarkdownRenderer = styled.div`
     }
 
     h2 {
+      font-weight: 800;
       font-size: 20px;
     }
 
     h3 {
-      font-size: 17px;
+      font-weight: 800;
+      font-size: 18px;
+    }
+
+    h4 {
+      font-weight: 600;
+      font-size: 16px;
     }
 
     img {
