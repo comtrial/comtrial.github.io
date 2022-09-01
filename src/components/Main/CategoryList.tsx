@@ -4,29 +4,36 @@ import { Link } from 'gatsby'
 
 
 type CategoryItemProps = {
-    active: boolean;
+  active: boolean;
 }
 
 type GatsbyLinkProps = {
-    children: ReactNode;
-    className?: string;
-    to: string;
+  children: ReactNode;
+  className?: string;
+  to: string;
 } & CategoryItemProps
 
 
 export type CategoryListProps = {
-    selectedCategory: string
-    categoryList: {
-        [key: string]: number
-    }
+  selectedCategory: string
+  categoryList: {
+    [key: string]: number
+  }
 }
 
 const CategoryListWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
 //   width: 768px;
-  padding-left: 15px;
-  margin: 80px auto 0;
+  // padding-left: 15px;
+  padding: 15px 0;
+  margin: 65px 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+
+
 
   @media (max-width: 768px) {
     width: 100%;
@@ -37,13 +44,17 @@ const CategoryListWrapper = styled.div`
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
-    <Link {...props} />
+  <Link {...props} />
 )) <CategoryItemProps>`
   margin-right: 20px;
   padding: 5px 0;
-  font-size: 16px;
-  font-weight: ${({ active }) => (active ? '800' : '400')};
+  font-size: 14px;
+  font-weight: 500;
+  font-weight: ${({ active }) => (active ? '650' : '500')};
+  text-decoration: ${({ active }) => (active ? 'underline' : 'none')};
+  text-underline-offset : 5px;
   cursor: pointer;
+  
 
   &:last-of-type {
     margin-right: 0;
@@ -55,22 +66,22 @@ const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
 `
 
 const CategoryList: FunctionComponent<CategoryListProps> = function ({
-    selectedCategory,
-    categoryList,
+  selectedCategory,
+  categoryList,
 }) {
-    return (
-        <CategoryListWrapper>
-            {Object.entries(categoryList).map(([name, count]) => (
-                <CategoryItem
-                    to={`/?category=${name}`}
-                    active={name === selectedCategory}
-                    key={name}
-                >
-                    #{name}({count})
-                </CategoryItem>
-            ))}
-        </CategoryListWrapper>
-    )
+  return (
+    <CategoryListWrapper>
+      {Object.entries(categoryList).map(([name, count]) => (
+        <CategoryItem
+          to={`/?category=${name}`}
+          active={name === selectedCategory}
+          key={name}
+        >
+          #{name}({count})
+        </CategoryItem>
+      ))}
+    </CategoryListWrapper>
+  )
 }
 
 export default CategoryList

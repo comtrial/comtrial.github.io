@@ -57,6 +57,10 @@ const defaultStyle = css`
     font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
     letter-spacing: -.01em;
     color: #292b2c;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   html,

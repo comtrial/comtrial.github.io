@@ -17,6 +17,7 @@ const Main = styled.div`
   padding: 0 80px;
   max-width: 800px;
   min-width: 650px;
+  overflow: scroll;
 
   @media (max-width: 1200px) {
     // max-width: 800px;

@@ -77,7 +77,7 @@ const Summary = styled.div`
   overflow-wrap: break-word;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   opacity: 0.7;
 `

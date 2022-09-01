@@ -11,7 +11,6 @@ const MarkdownRenderer = styled.div`
   flex-direction: column;
   width: 100%;
   word-break: break-all;
-  // overflow: hidden;
   box-sizing: border-box;
 
   img {
@@ -32,9 +31,9 @@ const MarkdownRenderer = styled.div`
 
 
   // Markdown Style
-  line-height: 1.8;
-  font-size: .875rem;
-  font-weight: 400;
+  line-height: 2;
+  font-size: 14px;
+  font-weight: 500;
 
   // Apply Padding Attribute to All Elements
   p {
