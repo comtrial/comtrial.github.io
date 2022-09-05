@@ -1,9 +1,9 @@
 ---
 date: '2020-07-29'
 title: 'Optional'
-categories: ['iOS']
+categories: ['Swift']
 summary: '홈페이지를 운영하는 많은 사람들 또는 기업들이 검색 페이지 최상단에 보여지게 하기 위해 어떤 최적화 작업을 하는지 알아보자.'
-thumbnail: './test.png'
+thumbnail: './default_thumnail.png'
 ---
 
 
@@ -12,7 +12,7 @@ thumbnail: './test.png'
 
 모든 개발에서 통용되는 개념이겠지만, 클라이언트 소프트웨어를 설게하는 목적으로서의 swift programming , 즉 *이벤트 주도 개발* 에서 올바르지 못한 혹은 실패한 행동에 대한 예외처리는 무척이나 중요하다. 
 
-![[9129f96cbba3f187cf058395dc6b5c76.gif]]
+![Image](./assets/9129f96cbba3f187cf058395dc6b5c76.gif "image")
 
 다양한 예외처리 중 하나의 방법은 올바르지 못한 행동에 대해서도 기본적으로 제공되는 **Defalt** 값을 설정 해 놓는 것이다. 이를 구현하기 위해 swift 는 Optional 을 제공한다. 
 

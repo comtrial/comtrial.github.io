@@ -21,12 +21,12 @@ const MarkdownRenderer = styled.div`
 
   .language-swift {
     border-radius: 8px;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .language-text {
     border-radius: 8px;
-    font-size: 12px;
+    font-size: 15px;
   }
 
 
