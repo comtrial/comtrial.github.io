@@ -24,8 +24,6 @@ export type CategoryListProps = {
 const CategoryListWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-//   width: 768px;
-  // padding-left: 15px;
   padding: 15px 0;
   margin: 65px 0;
   position: sticky;
@@ -34,10 +32,9 @@ const CategoryListWrapper = styled.div`
   z-index: 10;
 
 
-
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     width: 100%;
-    margin-top: 50px;
+    margin: 0;
     padding: 0 20px;
   }
 `

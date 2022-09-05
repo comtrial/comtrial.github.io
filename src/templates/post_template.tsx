@@ -22,13 +22,16 @@ const Post = styled.div`
   overflow: scroll;
 
 
-
-
   @media (max-width: 1200px) {
     // max-width: 800px;
     // min-width: 100%;
     margin: 0 auto;
     padding: 0 80px;
+    overflow: visible;
+
+    .Introduction{
+      height: 0;
+    }
   }
   
 
@@ -107,9 +110,10 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
 
   return (
     <Template title={title} description={summary} url={href} image={publicURL}>
-      <Introduction profileImage={gatsbyImageData} />
 
+      <Introduction profileImage={gatsbyImageData} />
       <Post>
+
         <CategoryList
           selectedCategory={selectedCategory}
           categoryList={categoryList}

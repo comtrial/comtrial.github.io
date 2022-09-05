@@ -24,6 +24,7 @@ const Main = styled.div`
     // min-width: 100%;
     margin: 0 auto;
     padding: 0 80px;
+    overflow: visible;
   }
 
   @media (max-width: 768px) {
