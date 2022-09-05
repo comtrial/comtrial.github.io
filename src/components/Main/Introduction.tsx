@@ -15,7 +15,7 @@ const Background = styled.div`
   // height: 100%;
 
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   
   @media (max-width: 1200px) {
     grid-column-start: 8;
