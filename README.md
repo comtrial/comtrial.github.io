@@ -1,3 +1,1 @@
 ## Personal Blog
-
-start
