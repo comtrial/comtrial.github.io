@@ -20,7 +20,7 @@ const Background = styled.div`
   @media (max-width: 1200px) {
     grid-column-start: 8;
     grid-column-end: 18;
-    padding: 80px 100px;
+    padding: 80px 80px;
     max-width: 800px;
     min-width: 650px;
     margin: 0 auto;
