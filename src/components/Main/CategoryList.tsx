@@ -25,7 +25,7 @@ const CategoryListWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding: 15px 0;
-  margin: 65px 0;
+  margin-top: 65px;
   position: sticky;
   top: 0;
   background-color: white;

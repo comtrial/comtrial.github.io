@@ -27,7 +27,8 @@ const Background = styled.div`
   }
 
   @media (max-width: 768px) {
-    // width: 100%
+    width: 100%;
+    min-width: 0;
     padding: 14px 14px 14px 14px;
 }
 `

@@ -18,7 +18,7 @@ const PostHeadWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 300px;
-  margin-top: 80px;
+  // margin-top: 80px;
   box-sizing: border-box;
 
   overflow: hidden;
