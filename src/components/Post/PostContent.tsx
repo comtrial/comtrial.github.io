@@ -17,16 +17,19 @@ const MarkdownRenderer = styled.div`
     width: 100%;
     padding: 0 5vw;
     object-fit: cover;
+  }]
+  pre[class*='language-'] {
+    font-size: 19px;
   }
 
-  .language-swift {
-    border-radius: 8px;
-    font-size: 13px;
+  language-swift {
+    font-size: 19px;
+    background: #32363D; 
   }
 
   .language-text {
-    border-radius: 8px;
-    font-size: 13px;
+    font-size: 19px;
+    background: #32363D;
   }
 
 
@@ -64,23 +67,23 @@ const MarkdownRenderer = styled.div`
 
   h1 {
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 700;
   }
 
   h2 {
     font-size: 22px;
-    font-weight: 800;
+    font-weight: 700;
     
   }
 
   h3 {
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 600;
     
   }
 
   h4 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 17px;
   }
 
@@ -133,7 +136,7 @@ const MarkdownRenderer = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     padding: 20px 20px;
-    line-height: 1.6;
+    line-height: 2;
     font-size: 14px;
 
     h1 {

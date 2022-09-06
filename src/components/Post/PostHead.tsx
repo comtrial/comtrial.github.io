@@ -32,7 +32,7 @@ const PostHeadWrapper = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 20vh;
+    height: 200px;
     margin-top: 12px;
   }
 `

@@ -18,9 +18,10 @@ const PostHeadInfoWrapper = styled.div`
   padding: 60px 0;
   color: #ffffff;
   padding: 0 20px;
+
   @media (max-width: 768px) {
     width: 100%;
-    padding: 40px 20px;
+    padding: 20px 20px;
   }
 `
 
@@ -56,7 +57,7 @@ const Title = styled.div`
   font-weight: 800;
 
   @media (max-width: 768px) {
-    font-size: 30px;
+    font-size: 24px;
   }
 `
 
@@ -66,12 +67,12 @@ const PostData = styled.div`
   align-items: center;
   margin-top: 10px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
   }
 `
