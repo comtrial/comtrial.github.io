@@ -6,3 +6,5 @@
 
 // You can delete this file if you're not using it
 import 'prismjs/themes/prism-tomorrow.css';
+// gatsby-browser.js
+require("prismjs/themes/prism.css")

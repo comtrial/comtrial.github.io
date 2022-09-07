@@ -18,25 +18,13 @@ const MarkdownRenderer = styled.div`
     padding: 0 5vw;
     object-fit: cover;
   }]
-  pre[class*='language-'] {
-    font-size: 19px;
-  }
-
-  language-swift {
-    font-size: 19px;
-    background: #32363D; 
-  }
-
-  .language-text {
-    font-size: 19px;
-    background: #32363D;
-  }
 
 
   // Markdown Style
   line-height: 2;
   font-size: 15px;
   font-weight: 500;
+  line-height: 2;
 
   // Apply Padding Attribute to All Elements
   p {
@@ -55,14 +43,7 @@ const MarkdownRenderer = styled.div`
   * + h2,
   * + h3,
   * + h3 {
-    margin-top: 80px;
-  }
-
-  hr + h1,
-  hr + h2,
-  hr + h3,
-  hr + h3 {
-    margin-top: 0;
+    margin-top: 40px;
   }
 
   h1 {
@@ -104,8 +85,8 @@ const MarkdownRenderer = styled.div`
 
   // Adjust Horizontal Rule style
   hr {
-    border: 1px solid #000000;
-    // margin: 8px 12px 0 0;
+    border: 0.8px solid rgb(210, 210, 210);
+    background: rgb(210, 210, 210);
     margin-bottom: 30px;
   }
 
@@ -119,24 +100,22 @@ const MarkdownRenderer = styled.div`
   pre[class*='language-'] {
     margin: 30px 0;
     padding: 15px;
-    font-size: 14px;
+    font-size: 13px;
+    font-family: Consolas,liberation mono,Menlo,Courier;
+    background: rgba(240, 240, 240, 0.5);
+    border-radius: 4px;
 
     ::-webkit-scrollbar-thumb {
-      background: rgba(255, 255, 255, 0.5);
-      border-radius: 3px;
+      background: rgba(245, 255, 255, 0.5);
+      border-radius: 4px;
     }
-  }
-
-  code[class*='language-'],
-  pre[class*='language-'] {
-    tab-size: 2;
   }
 
   // Markdown Responsive Design
   @media (max-width: 768px) {
     width: 100%;
     padding: 20px 20px;
-    line-height: 2;
+
     font-size: 14px;
 
     h1 {
@@ -166,16 +145,6 @@ const MarkdownRenderer = styled.div`
 
     hr {
       margin-bottom: 30px;
-    }
-
-    .language-swift {
-      border-radius: 8px;
-      font-size: 12px;
-    }
-  
-    .language-text {
-      border-radius: 8px;
-      font-size: 12px;
     }
   }
 `

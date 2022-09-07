@@ -92,6 +92,17 @@ module.exports = {
           },
           'gatsby-plugin-sitemap',
 
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: true,
+              noInlineHighlight: false,
+            },
+          },
+
         ],
       },
     },

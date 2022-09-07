@@ -53,7 +53,7 @@ const Title = styled.div`
   white-space: normal;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-size: 35px;
+  font-size: 26px;
   font-weight: 800;
 
   @media (max-width: 768px) {
@@ -66,8 +66,8 @@ const PostData = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
 
   @media (max-width: 768px) {
     flex-direction: column;

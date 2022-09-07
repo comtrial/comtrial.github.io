@@ -22,7 +22,7 @@ const PostItemWrapper = styled(Link)`
 const ThumbnailImage = styled(GatsbyImage)`
   z-index: -1;
   object-fit: cover;
-  filter: brightness(0.25);
+  // filter: brightness(0.25);
   width: 100%;
   border-radius: 0 5px 5px 0;
   opacity: 0.6
