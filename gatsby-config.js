@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `주니어 개발자의 개발 블로그`,
-    description: `주니어 개발자로서의 저를 표현한 블로그입니다.`,
+    title: `iOS 개발자의 개발 블로그`,
+    description: `iOS 개발과 관련한 포스팅을 작성하는 블로그 입니다.`,
     author: `Susan`,
     siteUrl: 'https://comtrial.github.io/',
   },

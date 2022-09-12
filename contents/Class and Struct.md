@@ -3,7 +3,7 @@ date: '2022-09-05'
 title: 'Class and Struct'
 categories: ['Swift', 'iOS']
 summary: 'class 와 struct 의 차이점 및 각각의 쓰임에 따른 활용 속성'
-thumbnail: './default_thumnail.png'
+thumbnail: './class.jpeg'
 ---
 
 ## Class vs Struct
@@ -24,6 +24,13 @@ thumbnail: './default_thumnail.png'
 힙 영역에 저장된다는 것은 저장되는 데이터들은 모두 컴파일 타임이 아닌 런타임에 크기가 결정된다는 말이고, 이는 런타임에 추가적인 연산을 요구한다는 의미입니다. 
 
 또한 참조 타입이기에 ARC 로 메모리 관리를 하게 된다. 
+
+
+<br>
+<br>
+<br>
+
+
 
 
 

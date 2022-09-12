@@ -79,13 +79,13 @@ const Introduction: FunctionComponent<IntroductionProps> = function ({
   return (
     <Background>
       <Wrapper>
-        <Title>Seungwon.Choi</Title>
+        <Title>Choi Seungwon</Title>
         {/* <ProfileImage profileImage={profileImage} /> */}
         <br></br>
 
         <div>
           <SubTitle>Nice to Meet You,</SubTitle>
-          <Title>I'm Junior Frontend Developer Susan.</Title>
+          <Title>I'm Junior iOS Developer.</Title>
         </div>
 
         <br></br>

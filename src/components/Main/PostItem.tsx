@@ -16,16 +16,14 @@ const PostItemWrapper = styled(Link)`
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 3px -5px rgba(0, 0, 0, 0.15);
   }
 `
 const ThumbnailImage = styled(GatsbyImage)`
-  z-index: -1;
-  object-fit: cover;
-  // filter: brightness(0.25);
-  width: 100%;
-  border-radius: 0 5px 5px 0;
-  opacity: 0.6
+  margin: 12px;
+  object-fit: fit;
+  border-radius: 5px;
+
 `
 
 const PostItemContent = styled.div`
