@@ -31,14 +31,15 @@ const MarkdownRenderer = styled.div`
 
 
   // Markdown Style
-  line-height: 2.4;
+  line-height: 2;
   font-size: 14px;
   font-weight: 400;
+  letter-spacing: -.01em;
   color: #343a40 !important;
 
   // Apply Padding Attribute to All Elements
   p {
-    padding: 3px 0;
+    padding: 14px 0;
     color: #343a40 !important;
   }
 
@@ -54,28 +55,28 @@ const MarkdownRenderer = styled.div`
   * + h2,
   * + h3,
   * + h3 {
-    margin-top: 40px;
+    margin-top: 60px;
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
   }
 
   h2 {
-    font-size: 20px;
-    font-weight: 600;
-    
-  }
-
-  h3 {
     font-size: 18px;
     font-weight: 600;
     
   }
 
-  h4 {
+  h3 {
     font-size: 16px;
+    font-weight: 600;
+    
+  }
+
+  h4 {
+    font-size: 15px;
     font-weight: 600;
   }
 

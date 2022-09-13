@@ -34,7 +34,7 @@ const Title = styled.div`
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 600;
 
   @media (max-width: 768px) {
     font-size: 24px;
