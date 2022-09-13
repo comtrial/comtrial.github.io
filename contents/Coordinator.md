@@ -16,13 +16,17 @@ Coordinator 가  등장한 이유와 무엇을 해결 하려 하였으며, 적�
 
 Coordinator 이전에도 지속적으로 해결하고자 한 문제점 들은 ViewController 가 많은 책임을 지는 것을 해결하고자 하는 노력이 있었습니다. 
 MVVM 은 ViewController 에서 Data 상태 관리를 분리 시키려고하였고, MVC 또한 ViewController 의 역할을 덜어주려 하였습니다. 
+
 <br>
+
 따라서 Coordinator 또한 ViewController 의 역할을 덜어주려 한다는 것에서 시작합니다. 
 그 중 Coordinator 는 ViewController 에서 **화면 전환** 에 대한 책임을 덜어주는 패턴 입니다. 이로 인해 ViewController 가 UI 를 그리는 것에만 집중할 수 있게 하는 노력에 힘을 실어주는 것입니다.
+
 <br>
 
 기존의 화면 전환의 방식은 UINavigationController 의 pushViewController 메서드를 실행시켜 이동 시킬 대상 ViewController B 를 파라미터로 등록해줌으로써 구현하였습니다. 
 이 때문에 ViewController A 는 ViewController B 를 인지하게 되며, 의존성이 생기게 됩니다. 
+
 <br>
 
 ![Image](./assets/Coordinator_vc.png "image")
@@ -32,6 +36,7 @@ MVVM 은 ViewController 에서 Data 상태 관리를 분리 시키려고하였�
 
 또한 하나의 페이지로의 이동이 여러 페이지에서 진입점을 가지고 있을 경우, 즉 다양한 경로로 동일한 페이지로 이동하는 경우 
 로직의 수정이 일어날 경우 각각의 ViewController 에서 구현되어 있기에 각각의 ViewController 를 수정해줘야 하는 상황이 생깁니다. 
+
 <br>
 
 ![Image](./assets/Coordinator_endpoint.png "image")
@@ -52,6 +57,7 @@ MVVM 은 ViewController 에서 Data 상태 관리를 분리 시키려고하였�
 *Coordinator 를 통한 화면 전환*
 
 <br>
+
 따라서 Coordinator 를 통해서 ViewController 에서 화면 전환에 대한 로직을 분리시킴으로써 
 * ~~ViewController 에서 UI 를 그리는 로직과 화면 전환 로직 모두를 가지고 있어 비대해진다.~~
   -> 화면 전환에 대한 로직을 Coordinator 가 담당하므로써 ViewContorller 는 UI 가 집중할 수 있게 됩니다. 
@@ -75,7 +81,9 @@ FirstTab 에서와 SecondTab에서 버튼 클릭을 통해 동일한 DetailView 
 ### NoCoordinator
 
 아래와 같이 Coordinator 없이 구현할 경우 UINavigationController 에 이동 대상 ViewController (DetailViewController) 를 등록해 주어야 하기 때문에 ViewController 간의 의존성이 생기게 됩니다. 
+
 <br>
+
 또한 각각의 First, Second ViewController 에서 DetailViewController 로 직접적으로 화면 전환을 시켜주기에 진입점의 관리가 각각의 ViewController 에서 이루어지게 됩니다. 
 
 ```swift
@@ -137,7 +145,9 @@ class NoCoordinatorSecondVC: UIViewController{
 ### Apply Coordinator
 
 Coordinator 는 일반적으로 protocol 로 구현하며 **start** method 를 가지고 있습니다.
+
 <br>
+
 start() 에서는 Coordinator 가 화면 전환을 역할 해주기에 전환될 대상 ViewController 에 대한 초기화, 나아가 MVVM 패턴에서는 ViewModel 에 대한 초기화 설정 등의 화면 전환 이전 시점에서 실행한 로직에 필요한 기능을 수행합니다. 
 
 ```swift

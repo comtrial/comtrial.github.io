@@ -31,14 +31,15 @@ const MarkdownRenderer = styled.div`
 
 
   // Markdown Style
-  line-height: 2.8;
-  font-size: 15px;
-  font-weight: 500;
-
+  line-height: 2.4;
+  font-size: 14px;
+  font-weight: 400;
+  color: #343a40 !important;
 
   // Apply Padding Attribute to All Elements
   p {
     padding: 3px 0;
+    color: #343a40 !important;
   }
 
   // Adjust Heading Element Style
@@ -57,25 +58,25 @@ const MarkdownRenderer = styled.div`
   }
 
   h1 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 600;
   }
 
   h2 {
-    font-size: 22px;
-    font-weight: 700;
-    
-  }
-
-  h3 {
     font-size: 20px;
     font-weight: 600;
     
   }
 
-  h4 {
+  h3 {
+    font-size: 18px;
     font-weight: 600;
-    font-size: 17px;
+    
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
   }
 
   // Adjust Quotation Element Style
