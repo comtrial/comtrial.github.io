@@ -24,6 +24,7 @@ MVVM 은 ViewController 에서 Data 상태 관리를 분리 시키려고하였�
 기존의 화면 전환의 방식은 UINavigationController 의 pushViewController 메서드를 실행시켜 이동 시킬 대상 ViewController B 를 파라미터로 등록해줌으로써 구현하였습니다. 
 이 때문에 ViewController A 는 ViewController B 를 인지하게 되며, 의존성이 생기게 됩니다. 
 <br>
+
 ![Image](./assets/Coordinator_vc.png "image")
 *기존의 화면 전환의 방식*
 
@@ -32,13 +33,15 @@ MVVM 은 ViewController 에서 Data 상태 관리를 분리 시키려고하였�
 또한 하나의 페이지로의 이동이 여러 페이지에서 진입점을 가지고 있을 경우, 즉 다양한 경로로 동일한 페이지로 이동하는 경우 
 로직의 수정이 일어날 경우 각각의 ViewController 에서 구현되어 있기에 각각의 ViewController 를 수정해줘야 하는 상황이 생깁니다. 
 <br>
-![Image](./assets/Coordinator_다양한_진입점.png "image")
+
+![Image](./assets/Coordinator_endpoint.png "image")
 *다양한 경로의 화면 진입점*
 
 
-<br>
+<br/>
 위의 방식이 가지고 있는 문제점을 정리해 보면
-<br>
+<br/>
+
 * ViewController 에서 UI 를 그리는 로직과 화면 전환 로직 모두를 가지고 있어 비대해진다.
 * 이동 연결이 있는 ViewController 간의 의존성이 심해진다. 
 * 특정 페이지로의 화면 전환 로직이 각각의 ViewController 에 흩어져 있기에, 관리가 어렵다. 
@@ -67,7 +70,7 @@ MVVM 은 ViewController 에서 Data 상태 관리를 분리 시키려고하였�
 FirstTab 에서와 SecondTab에서 버튼 클릭을 통해 동일한 DetailView 로 이동하는 과정을 Coordinator 도입 이전과 이후로 구현해 보면서 Coordinator 가 해결한 점을 확인해 보도록 하겠습니다. 
 
 ![Image](./assets/coor_simul.gif)
-
+*구현해 볼 화면*
 
 ### NoCoordinator
 

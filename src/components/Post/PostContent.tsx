@@ -14,17 +14,27 @@ const MarkdownRenderer = styled.div`
   box-sizing: border-box;
 
   img {
-    width: 100%;
-    padding: 0 5vw;
+    display: block;
+    max-height: 500px;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 20px;
     object-fit: cover;
-  }]
+  }
+
+  span + em {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+  }
+
 
 
   // Markdown Style
-  line-height: 2;
+  line-height: 2.8;
   font-size: 15px;
   font-weight: 500;
-  line-height: 2;
+
 
   // Apply Padding Attribute to All Elements
   p {
@@ -101,7 +111,7 @@ const MarkdownRenderer = styled.div`
     margin: 30px 0;
     padding: 15px;
     font-size: 13px;
-    font-family: Consolas,liberation mono,Menlo,Courier;
+    font-family: Roboto;
     background: rgba(240, 240, 240, 0.5);
     border-radius: 4px;
 
@@ -138,7 +148,8 @@ const MarkdownRenderer = styled.div`
     }
 
     img {
-      width: 100%;
+      width: auto;
+      max-height: 300px;
       padding: 0 10vw;
       object-fit: cover;
     }
