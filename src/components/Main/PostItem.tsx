@@ -18,6 +18,11 @@ const PostItemWrapper = styled(Link)`
   &:hover {
     box-shadow: 0 3px 3px -5px rgba(0, 0, 0, 0.15);
   }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 5fr 3fr;
+  }
+
 `
 const ThumbnailImage = styled(GatsbyImage)`
   margin: 12px;
