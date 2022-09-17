@@ -1,5 +1,5 @@
 ---
-date: '2022-09-12'
+date: '2022-09-14'
 title: 'Protocol by delegate'
 categories: ['iOS']
 summary: 'Delegate pattern 을 통한 protocol 의 이해'
