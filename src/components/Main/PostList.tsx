@@ -14,8 +14,6 @@ type PostListProps = {
     posts: PostListItemType[]
 }
 
-
-
 export type PostType = {
     node: {
         id: string
