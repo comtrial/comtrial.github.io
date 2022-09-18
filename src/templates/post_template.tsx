@@ -24,12 +24,12 @@ const Post = styled.div`
 
   @media (max-width: 1200px) {
     margin: 0 auto;
-    padding: 0 80px;
+    padding: 0 40px;
     overflow: visible;
 
-    .Introduction{
-      height: 0;
-    }
+    // .Introduction{
+    //   height: 0;
+    // }
   }
   
 

@@ -22,7 +22,7 @@ const MarkdownRenderer = styled.div`
     object-fit: cover;
   }
 
-  span + em {
+  span + em, img + em {
     display: block;
     text-align: center;
     font-size: 12px;
@@ -111,9 +111,10 @@ const MarkdownRenderer = styled.div`
   // Adjust Code Style
   pre[class*='language-'] {
     margin: 30px 0;
-    padding: 15px;
-    font-size: 13px;
-    font-family: Roboto;
+    padding: 14px;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace !important;
     background: rgba(240, 240, 240, 0.5);
     border-radius: 4px;
 

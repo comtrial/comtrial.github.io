@@ -20,10 +20,8 @@ const Main = styled.div`
   overflow: scroll;
 
   @media (max-width: 1200px) {
-    // max-width: 800px;
-    // min-width: 100%;
     margin: 0 auto;
-    padding: 0 80px;
+    // padding: 0 80px;
     overflow: visible;
   }
 
