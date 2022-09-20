@@ -12,11 +12,12 @@ import CategoryList from 'components/Main/CategoryList'
 import queryString, { ParsedQuery } from 'query-string'
 
 const Post = styled.div`
-  grid-column-start: 9;
-  grid-column-end: 17;
+  grid-column-start: 7;
+  grid-column-end: 19;
 
-  min-width: 600px;
-  max-width: 700px;
+  margin: 0 auto;
+  min-width: 500px;
+  max-width: 580px;
   width: 100%;
 
   overflow: scroll;
@@ -26,10 +27,6 @@ const Post = styled.div`
     margin: 0 auto;
     padding: 0 40px;
     overflow: visible;
-
-    // .Introduction{
-    //   height: 0;
-    // }
   }
   
 

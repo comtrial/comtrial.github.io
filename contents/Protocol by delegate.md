@@ -77,7 +77,7 @@ Protocol 이 가지는 위의 기능적 기대감에 의한 정의를 가장 잘
 
 
 
-## Delegate in playgroun다
+## Delegate in playground
 ---
 
 delegate 는 위임하다 등의 의미를 갖는데 해당 내용으로 이해하기에는 어려움이 있습니다. 

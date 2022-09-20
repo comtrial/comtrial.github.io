@@ -31,9 +31,9 @@ const MarkdownRenderer = styled.div`
 
 
   // Markdown Style
-  line-height: 2;
-  font-size: 14px;
-  font-weight: 400;
+  line-height: 1.8;
+  font-size: 14.2px;
+  font-weight: 450;
   letter-spacing: -.01em;
   color: #343a40 !important;
 

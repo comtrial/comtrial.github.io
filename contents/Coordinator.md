@@ -60,12 +60,15 @@ MVVM 은 ViewController 에서 Data 상태 관리를 분리 시키려고하였�
 
 따라서 Coordinator 를 통해서 ViewController 에서 화면 전환에 대한 로직을 분리시킴으로써 
 * ~~ViewController 에서 UI 를 그리는 로직과 화면 전환 로직 모두를 가지고 있어 비대해진다.~~
+  
   -> 화면 전환에 대한 로직을 Coordinator 가 담당하므로써 ViewContorller 는 UI 가 집중할 수 있게 됩니다. 
   
 * ~~이동 연결이 있는 ViewController 간의 의존성이 심해진다.~~
+  
   -> Coordinator 를 통해 Navigation 을 구현함으로써 ViewController 는 Coordinator 만을 인지하게 됩니다. 이는 한 화면에 여러 이동 진입점이 있을 경우 더욱 유용합니다. 
   
 * ~~특정 페이지로의 화면 전환 로직이 각각의 ViewController 에 흩어져 있기에, 관리가 어렵다.~~
+ 
   -> 각각의 진입점에 해당하는 ViewController 에서 이동 대상이 되는 ViewController 의 Coordinator 를 통해 화면 전환이 일어나기에 관리에 용이합니다. 
 
 
