@@ -31,9 +31,9 @@ const MarkdownRenderer = styled.div`
 
 
   // Markdown Style
-  line-height: 1.8;
+  line-height: 1.5;
   font-size: 14.2px;
-  font-weight: 450;
+  font-weight: 400;
   letter-spacing: -.01em;
   color: #343a40 !important;
 
@@ -60,24 +60,24 @@ const MarkdownRenderer = styled.div`
 
   h1 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   h2 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     
   }
 
   h3 {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     
   }
 
   h4 {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   // Adjust Quotation Element Style

@@ -169,6 +169,9 @@ print(DataStorage.shared.data)
 // ["sharedData1"]
 ```
 
-reference
 
+> 부족한 글 읽어주셔서 진심으로 감사드리며, 잘못된 부분이나 개선점은 무심하게 라도 알려주시면 계신 방향으로 감사인사 드리겠습니다.
+
+
+reference
 [https://babbab2.tistory.com/66](https://babbab2.tistory.com/66)

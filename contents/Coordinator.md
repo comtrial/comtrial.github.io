@@ -7,7 +7,7 @@ thumbnail: './Coor_thumnail.png'
 ---
 
 ## Overview
-
+---
 
 Coordinator 가  등장한 이유와 무엇을 해결 하려 하였으며, 적용 후 어떤 부분이 개선 되었는지를 같은 기능을 Coordinator 적용 유/무 두 가지로 구현하여 확인해 보도록하겠습니다. 
 
@@ -213,3 +213,5 @@ class FirstViewController: UIViewController{
 
 
 이후엔 Coordinator 를 childCoordinator, parentCooridnator 를 통하여 고도화하여 사용하는 방법을 알아보도록 하겠습니다. 
+
+> 부족한 글 읽어주셔서 진심으로 감사드리며, 잘못된 부분이나 개선점은 무심하게 라도 알려주시면 계신 방향으로 감사인사 드리겠습니다.

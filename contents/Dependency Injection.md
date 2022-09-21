@@ -8,6 +8,7 @@ thumbnail: './DI_thum.png'
 
 
 ## Overview
+---
 
 의존성이란 프로그래밍을 통해 product 를 개발할 때 하나하나의 분리된 기능들이 상호 의존관계를 가지며 개발되는 과정에서의 관계를 의미합니다. 
 
@@ -28,6 +29,7 @@ Dependency Injection (이하  DI), 즉 의존성 주입에 대해 해당 concept
 따라서 의존성 주입이란 **의존성 분리**와 **테스팅**을 도와줄 수 있다는 점은 분명한거 같다. 
 
 ## DI in playground
+---
 
 ### 강한 의존성을 어떤 문제를 발생시키는가
 
@@ -278,7 +280,6 @@ func StubFoodRepositoryImpli() -> FoodReopsitory {
 을 가질 수 있게 됩니다.
 
 > 부족한 글 읽어주셔서 진심으로 감사드리며, 잘못된 부분이나 개선점은 무심하게 라도 알려주시면 계신 방향으로 감사인사 드리겠습니다.
-> 
 
 reference
 

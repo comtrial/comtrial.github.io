@@ -124,6 +124,9 @@ print(aValue)
 nil 이 정말 아니여야 하는 프로세스 ( nil 일 경우 죽는게 낫다 ) 에 사용하여야 하나 싶지만, 해당 경우 더 우아한 예외처리가 있을 것이다. 
 
 
+> 부족한 글 읽어주셔서 진심으로 감사드리며, 잘못된 부분이나 개선점은 무심하게 라도 알려주시면 계신 방향으로 감사인사 드리겠습니다.
+
+
 reference
 https://developer.apple.com/documentation/swift/optional
 https://dblog.tech/17
