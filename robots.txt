@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://comtrial.github.io/sitemap.xml
+Host: https://comtrial.github.io
