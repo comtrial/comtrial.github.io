@@ -3,7 +3,7 @@ date: '2022-09-12'
 title: 'Coordinator'
 categories: ['iOS']
 summary: 'Coordinator 에 대한 개념적 배경과 화면 전환 코드를 Coordinator 구현 유무로 비교를 통한 이해'
-thumbnail: './Coor_thumnail.png'
+thumbnail: './assets/Coor_thumnail.png'
 ---
 
 ## Overview

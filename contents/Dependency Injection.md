@@ -3,7 +3,7 @@ date: '2022-09-21'
 title: 'Dependency Injection'
 categories: ['iOS']
 summary: '의존성에 대한 이해와 의존성 주입 적용 이전의 상황과 이후에 해결한 점에 대한 이해를 통한 의존성 주입의 필요성 이해'
-thumbnail: './DI_thum.png'
+thumbnail: './assets/DI_thum.png'
 ---
 
 
@@ -282,9 +282,6 @@ func StubFoodRepositoryImpli() -> FoodReopsitory {
 > 부족한 글 읽어주셔서 진심으로 감사드리며, 잘못된 부분이나 개선점은 무심하게 라도 알려주시면 계신 방향으로 감사인사 드리겠습니다.
 
 reference
-
-[https://belief-driven-design.com/decouple-your-code-with-dependency-injection-77b8d39cc93/](https://belief-driven-design.com/decouple-your-code-with-dependency-injection-77b8d39cc93/)
-
-[https://ios-development.tistory.com/612](https://ios-development.tistory.com/612)
-
-[https://eunjin3786.tistory.com/115](https://eunjin3786.tistory.com/115)
+* [https://belief-driven-design.com/decouple-your-code-with-dependency-injection-77b8d39cc93/](https://belief-driven-design.com/decouple-your-code-with-dependency-injection-77b8d39cc93/)
+* [https://ios-development.tistory.com/612](https://ios-development.tistory.com/612)
+* [https://eunjin3786.tistory.com/115](https://eunjin3786.tistory.com/115)

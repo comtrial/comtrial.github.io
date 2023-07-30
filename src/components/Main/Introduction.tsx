@@ -85,13 +85,14 @@ const Introduction: FunctionComponent<IntroductionProps> = function ({
 
         <div>
           <SubTitle>Nice to Meet You,</SubTitle>
-          <Title>I'm Junior iOS Developer.</Title>
+          <Title>I'm Junior Software Engineer.</Title>
         </div>
 
         <br></br>
         <Info>
-          <p>comtrial97@gmail.com</p>
-          <br></br>
+          {/* <p>comtrial97@gmail.com</p> */}
+          <a href="mailto:comtrial97@gmail.com" target="_blank" rel="noreferrer"><u>Contact →</u></a>
+          <br/>
           <a href="https://github.com/comtrial" target="_blank" rel="noreferrer"><u>Github →</u></a>
         </Info>
 

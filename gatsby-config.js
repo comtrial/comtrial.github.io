@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `iOS 개발자의 개발 블로그`,
-    description: `iOS 개발과 관련한 포스팅을 작성하는 블로그 입니다.`,
+    title: `개발자의 개발 블로그`,
+    description: `Java, Back-end 개발과 관련한 포스팅을 작성하는 블로그 입니다.`,
     author: `Susan`,
     siteUrl: 'https://comtrial.github.io/',
   },
@@ -90,8 +90,16 @@ module.exports = {
               stripQueryString: true,
             },
           },
-          'gatsby-plugin-sitemap',
-
+          // 'gatsby-plugin-sitemap',
+          'gatsby-plugin-advanced-sitemap',
+          {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: {
+              host: 'https://YOUR-URL.com/',
+              sitemap: 'https://YOUR-URL.com/sitemap.xml',
+              policy: [{ userAgent: '*', allow: '/' }],
+            },
+          },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {

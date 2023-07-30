@@ -3,7 +3,7 @@ date: '2022-09-14'
 title: 'Protocol by delegate'
 categories: ['iOS']
 summary: 'Delegate pattern 을 통한 protocol 의 이해'
-thumbnail: './protocol_thum.jpg'
+thumbnail: './assets/protocol_thum.jpg'
 ---
 
 

@@ -75,12 +75,10 @@ const CategoryList: FunctionComponent<CategoryListProps> = function ({
           key={name}
         >
           {
-            name === "All"
+            name === "All" || count === 1
               ? `#${name}`
               : `#${name}(${count})`
           }
-
-
         </CategoryItem>
       ))}
     </CategoryListWrapper>
