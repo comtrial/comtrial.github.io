@@ -32,7 +32,7 @@ const MarkdownRenderer = styled.div`
 
   // Markdown Style
   line-height: 1.5;
-  font-size: 14.2px;
+  font-size: 15px;
   font-weight: 400;
   letter-spacing: -.01em;
   color: #343a40 !important;
@@ -83,9 +83,9 @@ const MarkdownRenderer = styled.div`
   // Adjust Quotation Element Style
   blockquote {
     margin: 30px 0;
-    padding: 5px 15px;
-    border-left: 1px solid #000000;
-    font-weight: 800;
+    padding: 0px 15px;
+    border-left: 0.8px solid #000000;
+    font-weight: 500;
   }
 
   // Adjust List Element Style
