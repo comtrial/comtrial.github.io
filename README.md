@@ -7,7 +7,8 @@ npm run develop
 ```
 
 
-### 배포```
+### 배포
+```
 ... git push 후
 yarn deploy
 ```
