@@ -12,8 +12,8 @@ import queryString, { ParsedQuery } from 'query-string'
 import Template from 'components/Common/Template'
 
 const Main = styled.div`
-  grid-column-start: 8;
-  grid-column-end: 18;
+  grid-column-start: 7;
+  grid-column-end: 19;
   padding: 0 80px;
   max-width: 800px;
   min-width: 650px;
