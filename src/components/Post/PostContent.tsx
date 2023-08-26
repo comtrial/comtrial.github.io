@@ -43,6 +43,14 @@ const MarkdownRenderer = styled.div`
     color: #343a40 !important;
   }
 
+  strong {
+    background: #333e;
+    border-radius: 2px;
+    color: rgb(256, 256, 256) !important;
+    font-weight: 400;
+    padding: 2px;
+  }
+
   // Adjust Heading Element Style
   h1,
   h2,
@@ -82,7 +90,7 @@ const MarkdownRenderer = styled.div`
 
   // Adjust Quotation Element Style
   blockquote {
-    margin: 30px 0;
+    margin: 10px 0;
     padding: 0px 15px;
     border-left: 0.8px solid #000000;
     font-weight: 500;
@@ -92,7 +100,7 @@ const MarkdownRenderer = styled.div`
   ol,
   ul {
     margin-left: 20px;
-    padding: 24px 0;
+    padding: 20px 0;
   }
 
   // Adjust Horizontal Rule style

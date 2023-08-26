@@ -9,7 +9,7 @@ type PostItemProps = PostFrontmatterType & { link: string }
 
 const PostItemWrapper = styled(Link)`
   display: grid;
-  grid-template-columns: 5fr 2fr;
+  grid-template-columns: 6fr 3fr;
   border-radius: 5px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
   transition: 0.3s box-shadow;
@@ -25,8 +25,8 @@ const PostItemWrapper = styled(Link)`
 
 `
 const ThumbnailImage = styled(GatsbyImage)`
-  margin: 12px;
-  object-fit: fit;
+  margin: 24px;
+  object-fit: fill;
   border-radius: 5px;
 
 `
